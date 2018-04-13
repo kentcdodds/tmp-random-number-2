@@ -9,6 +9,9 @@
   "keywords": [
     "random"
   ],
+  "files": [
+    "index.js"
+  ],
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
   "license": "MIT"
 }
