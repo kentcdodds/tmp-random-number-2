@@ -1,4 +1,4 @@
-const generateRandomNumber = require('../')
+import generateRandomNumber from '../'
 
 test('you get a random number between the upper and lower range', () => {
   const number = generateRandomNumber(0, 100)

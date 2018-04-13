@@ -2,18 +2,19 @@
   "name": "@kentcdodds/tmp-random-number-2",
   "version": "1.0.3",
   "description": "Do not use this, it is fake",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "babel --copy-files --out-dir dist --ignore __tests__,__mocks__ src",
     "test": "jest --coverage",
     "lint": "eslint .",
-    "validate": "npm-run-all --parallel test lint",
+    "validate": "npm-run-all --parallel build test lint",
     "setup": "npm install && npm run validate"
   },
   "keywords": [
     "random"
   ],
   "files": [
-    "src/index.js"
+    "dist"
   ],
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
   "license": "MIT",
@@ -26,12 +27,18 @@
   },
   "homepage": "https://github.com/kentcdodds/tmp-random-number-2#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "eslint": "^4.19.1",
     "jest": "^22.4.3",
     "npm-run-all": "^4.1.2"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module"
+    },
     "env": {
       "browser": true,
       "commonjs": true,
@@ -42,6 +49,12 @@
   },
   "eslintIgnore": [
     "node_modules",
-    "coverage"
-  ]
+    "coverage",
+    "dist"
+  ],
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
 }
