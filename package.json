@@ -2,16 +2,18 @@
   "name": "@kentcdodds/tmp-random-number-2",
   "version": "1.0.3",
   "description": "Do not use this, it is fake",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ."
+    "test": "jest --coverage",
+    "lint": "eslint .",
+    "validate": "npm-run-all --parallel test lint",
+    "setup": "npm install && npm run validate"
   },
   "keywords": [
     "random"
   ],
   "files": [
-    "index.js"
+    "src/index.js"
   ],
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
   "license": "MIT",
@@ -24,7 +26,9 @@
   },
   "homepage": "https://github.com/kentcdodds/tmp-random-number-2#readme",
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^4.19.1",
+    "jest": "^22.4.3",
+    "npm-run-all": "^4.1.2"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -32,7 +36,12 @@
       "browser": true,
       "commonjs": true,
       "es6": true,
-      "node": true
+      "node": true,
+      "jest": true
     }
-  }
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "coverage"
+  ]
 }

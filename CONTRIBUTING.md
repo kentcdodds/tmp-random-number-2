@@ -9,6 +9,7 @@ Thanks for being willing to contribute!
 
 1. Fork and clone the repo
 2. Create a branch for your PR with `git checkout -b pr/your-branch-name`
+3. Run `npm run setup` to set up the project.
 
 > Tip: Keep your `master` branch pointing at the original repository and make
 > pull requests from branches on your fork. To do this, run:
