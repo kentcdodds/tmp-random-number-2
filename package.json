@@ -1,6 +1,6 @@
 {
   "name": "@kentcdodds/tmp-random-number-2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Do not use this, it is fake",
   "main": "index.js",
   "scripts": {
