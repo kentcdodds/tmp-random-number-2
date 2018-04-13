@@ -33,7 +33,7 @@ console.log(randomNumber(0, 1)) // logs a random number between 0 and 1
 
 ## Inspiration
 
-This package was inspired by randomness.
+This package was inspired by random awesomeness.
 
 ## Other Solutions
 
