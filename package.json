@@ -13,5 +13,13 @@
     "index.js"
   ],
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kentcdodds/tmp-random-number-2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kentcdodds/tmp-random-number-2/issues"
+  },
+  "homepage": "https://github.com/kentcdodds/tmp-random-number-2#readme"
 }
