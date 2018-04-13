@@ -45,3 +45,5 @@ MIT
 
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org
+
+edit!
