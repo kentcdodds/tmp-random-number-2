@@ -4,7 +4,8 @@
   "description": "Do not use this, it is fake",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "keywords": [
     "random"
@@ -21,5 +22,17 @@
   "bugs": {
     "url": "https://github.com/kentcdodds/tmp-random-number-2/issues"
   },
-  "homepage": "https://github.com/kentcdodds/tmp-random-number-2#readme"
+  "homepage": "https://github.com/kentcdodds/tmp-random-number-2#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "node": true
+    }
+  }
 }
